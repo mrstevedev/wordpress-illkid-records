@@ -47,6 +47,37 @@ h3 {
 
 .nav {
   padding-left: 10rem;
+  font-family: bio-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  list-style: none;
+  position: relative;
+
+  li {
+    a {
+      color: #333;
+      font-size: 11px;
+    }
+
+    svg {
+      position: absolute;
+      top: 5px;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.6rem 4rem;
+
+  li {
+    a {
+      color: #fff;
+    }
+  }
 }
 
 .social-list {
@@ -64,27 +95,6 @@ h3 {
       &:hover {
         fill: #be817b;
       }
-    }
-  }
-}
-
-#menu-menu-1 {
-  font-family: bio-sans, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  list-style: none;
-  position: relative;
-
-  li {
-    a {
-      color: #333;
-      font-size: 11px;
-    }
-
-    svg {
-      position: absolute;
-      top: 5px;
     }
   }
 }
