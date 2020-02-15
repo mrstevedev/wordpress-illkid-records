@@ -67,10 +67,6 @@ h3 {
   }
 }
 
-.menu-item-has-children {
-  position: relative;
-}
-
 .sub-menu {
   position: absolute;
   list-style: none;
@@ -85,6 +81,16 @@ h3 {
   li {
     a {
       color: #fff;
+    }
+  }
+}
+
+.menu-item-has-children {
+  position: relative;
+
+  &:hover {
+    .sub-menu {
+      display: block;
     }
   }
 }
