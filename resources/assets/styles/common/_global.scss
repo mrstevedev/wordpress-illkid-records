@@ -75,22 +75,12 @@ h3 {
   left: -50px;
   width: 204px;
   text-align: left;
-  font-weight: 500;
+  font-weight: 700;
   display: none;
 
   li {
     a {
       color: #fff;
-    }
-  }
-}
-
-.menu-item-has-children {
-  position: relative;
-
-  &:hover {
-    .sub-menu {
-      display: block;
     }
   }
 }
@@ -109,6 +99,20 @@ h3 {
 
       &:hover {
         fill: #be817b;
+      }
+    }
+  }
+}
+
+.menu-item-has-children {
+  position: relative;
+
+  &:hover {
+    .sub-menu {
+      display: block;
+
+      li a:hover {
+        background: #000;
       }
     }
   }
