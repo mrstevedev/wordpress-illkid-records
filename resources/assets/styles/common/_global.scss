@@ -1,0 +1,166 @@
+body {
+  font-family: bio-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+@font-face {
+  font-family: helveticaneuebold;
+  src: url("../fonts/HelveticaNeueBlackCond.woff2") format("woff2"), url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.current-menu-item {
+  a {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #333;
+    }
+  }
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+
+  a {
+    color: #fff;
+    font-family: bio-sans, sans-serif;
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+}
+
+.nav {
+  padding-left: 10rem;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+
+  li {
+    padding: 0 1rem;
+
+    a {
+      svg {
+        transition: 0.12s ease-in-out;
+      }
+
+      &:hover {
+        fill: #be817b;
+      }
+    }
+  }
+}
+
+#menu-menu-1 {
+  font-family: bio-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  list-style: none;
+  position: relative;
+
+  li {
+    a {
+      color: #333;
+      font-size: 11px;
+    }
+
+    svg {
+      position: absolute;
+      top: 5px;
+    }
+  }
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
+  padding: 0.6rem 0;
+  // background: #fff;
+  // box-shadow: 0 0 2px #ccc;
+}
+
+.banner > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-one {
+  background: url("http://illkidrecords.local/wp-content/uploads/2020/02/bonitatrolly.jpg") 0 -31px no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-end-more {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  width: 15rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-family: bio-sans, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "helveticaneuebold", sans-serif;
+  font-weight: bold;
+  line-height: 13px;
+}
+
+.logo:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo-top {
+  color: #ccc;
+  display: block;
+}
+
+.cart-total {
+  border-radius: 100%;
+  box-shadow: 0 1px 0 #bbb;
+  position: absolute;
+  right: -22px;
+  padding: 8px;
+  bottom: 11px;
+}
+
+.cart-total-number {
+  position: absolute;
+  bottom: 1px;
+  right: 5px;
+  font-weight: 600;
+  font-size: 10px;
+}
