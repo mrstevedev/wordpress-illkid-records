@@ -67,11 +67,19 @@ h3 {
   }
 }
 
+.menu-item-has-children {
+  position: relative;
+}
+
 .sub-menu {
   position: absolute;
   list-style: none;
   background: rgba(0, 0, 0, 0.9);
-  padding: 0.6rem 4rem;
+  padding: 0.3em 0;
+  left: -50px;
+  width: 204px;
+  text-align: left;
+  font-weight: 500;
 
   li {
     a {
