@@ -80,15 +80,12 @@ h3 {
   width: 204px;
   text-align: left;
   font-weight: 500;
+  display: none;
 
   li {
     a {
       color: #fff;
     }
-  }
-
-  &:before {
-    
   }
 }
 
@@ -188,7 +185,7 @@ h3 {
   font-size: 10px;
 }
 
-.fas .fa-chevron-down {
+.fas.fa-chevron-down {
   position: absolute;
   right: 3px;
   top: 12px;
