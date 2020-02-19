@@ -79,7 +79,7 @@ h3 {
     a {
       color: #fff !important;
       transition: 0.22s ease-in-out;
-      padding: 0.7 1rem !important;
+      padding: 0.7rem 1rem !important;
       font-size: 0.7rem;
 
       &::after {
@@ -170,6 +170,8 @@ h3 {
 #menu-item-64 {
   a {
     padding: 0 !important;
+    position: relative;
+    bottom: 2px;
   }
 }
 
