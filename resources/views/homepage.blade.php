@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="section-one" 
+    {{-- <section class="section-one" 
         data-aos="fade-in" 
         data-aos-delay="10"
         data-aos-duration="10"
@@ -17,7 +17,7 @@
         <div class="section-end-more">
             <h3>Vinyl Store</h3>
         </div>
-    </section>
+    </section> --}}
     @while(have_posts()) @php the_post() @endphp
         @include('partials.page-header')
         @include('partials.content-page')
