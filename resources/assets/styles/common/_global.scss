@@ -259,3 +259,24 @@ h3 {
   // top: 13px;
   font-size: 8px;
 }
+
+@media (max-width: 535px) {
+  .slide-call-to-action {
+    width: 100%;
+    height: initial;
+  }
+
+  .slide-call-to-action-left {
+    width: initial;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .slide-call-to-action-right {
+    width: initial;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .cta-separator {
+    height: initial;
+  }
+}
