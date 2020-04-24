@@ -1,7 +1,14 @@
 export default {
   init() {
     // JavaScript to be fired on the home page
-    console.log('Init code for animated dropdown nav bar');
+    $(window).on('scroll', function () {
+      if ($(this).scrollTop() > 100) {
+          $('header').addClass('not-transparent');
+      }
+      else {
+          $('header').removeClass('not-transparent');
+      }
+  });
     
   },
   finalize() {
