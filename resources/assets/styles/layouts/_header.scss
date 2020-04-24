@@ -9,3 +9,11 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.banner {
+  transition: 0.22s ease-in-out !important;
+}
+
+.not-transparent {
+  background: rgba(255, 255, 255, 1) !important;
+}
