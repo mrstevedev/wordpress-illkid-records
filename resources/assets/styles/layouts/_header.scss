@@ -5,3 +5,7 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.nav > li > a {
+  padding-bottom: 0 !important;
+}
