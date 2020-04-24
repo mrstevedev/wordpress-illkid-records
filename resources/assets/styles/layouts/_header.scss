@@ -2,10 +2,10 @@
   @extend .nav-item;
 }
 
-.banner .nav a {
-  @extend .nav-link;
-}
-
 .nav > li > a {
   padding-bottom: 0 !important;
+}
+
+.banner .nav a {
+  @extend .nav-link;
 }
