@@ -11,6 +11,10 @@ h3 {
   letter-spacing: 0.7px;
 }
 
+ol, ul, dl {
+  margin-bottom: 0rem !important;
+}
+
 @font-face {
   font-family: helveticaneueblackcond;
   src: url("../fonts/HelveticaNeueBlackCond.woff2") format("woff2"), url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
@@ -179,7 +183,7 @@ h3 {
 .banner {
   position: fixed;
   width: 100%;
-  padding: 0.6rem 0;
+  padding: 1rem 0;
   z-index: 2;
   // background: #fff;
   // box-shadow: 0 0 2px #ccc;
