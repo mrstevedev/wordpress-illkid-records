@@ -2,7 +2,22 @@
     {{-- @php dynamic_sidebar('sidebar-footer') @endphp --}}
     <div class="footer__content--top">
       <div class="container-fluid">
-        <p>Top</p>
+        <div class="footer-content--btmLeft"></div>
+        <div class="footer-content--center"></div>
+        <div class="footer-content--btmRight">
+          <form class="footer__form--signup" action="" method="GET">
+            <label for="signup">
+              Sign Up For Our Newsletter
+              </label>
+              <input 
+                type="text" 
+                id="signup" 
+                class="signup" 
+                name="signup" 
+                placeholder="Enter Your Email Address" />
+            <input type="submit" value="Subscribe" class="footer__signUp--btn">
+          </form>
+        </div>
       </div>
     </div>
     <div class="footer__content--btm">
@@ -21,7 +36,7 @@
             <span class="footer__content--btmLanguagTxt">
               Language
               <span class="footer__content--btmLanguageSelect">
-                English
+               <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
             </span>
             <span class="footer__content--btmSocials">
               <ul class="social-list">
