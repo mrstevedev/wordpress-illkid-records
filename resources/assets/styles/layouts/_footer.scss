@@ -41,6 +41,12 @@ footer {
     border-radius: 4px;
     margin: 0 0 0 11px;
     color: #aaa;
+
+    img {
+      position: relative;
+      bottom: 2px;
+      right: 2px;
+    }
   }
 
   .social-list {
@@ -68,17 +74,19 @@ footer {
 
 .signup {
   width: 255px;
-  height: 57px;
+  height: 56px;
   text-indent: 1rem;
   color: #333;
   outline: none;
   border: none;
   box-shadow: 0 2px 0 #e6e6e6;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .footer__signUp--btn {
-  width: 130px;
-  height: 57px;
+  width: 120px;
+  height: 56px;
   outline: none;
   border: none;
   background: #333;
@@ -93,4 +101,10 @@ footer {
   position: relative;
   top: -2px;
   right: 1px;
+}
+
+::placeholder {
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 13px;
 }
