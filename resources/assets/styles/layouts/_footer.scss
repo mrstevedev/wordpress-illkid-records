@@ -9,6 +9,8 @@ footer {
   .footer__content--top {
     background: #f2f2f2;
     height: 292px;
+    display: flex;
+    align-items: center;
   }
 
   .footer__content--btm {
@@ -53,4 +55,39 @@ footer {
   .social-list li a:hover svg {
     fill: #be817b;
   }
+}
+
+.footer__form--signup {
+  label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+
+.signup {
+  width: 255px;
+  height: 57px;
+  text-indent: 1rem;
+  color: #333;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 0 #e6e6e6;
+}
+
+.footer__signUp--btn {
+  width: 130px;
+  height: 57px;
+  outline: none;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 0 1.34rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 0 #000;
 }
