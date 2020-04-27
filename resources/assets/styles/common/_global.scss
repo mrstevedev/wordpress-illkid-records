@@ -182,6 +182,12 @@ ul {
 }
 
 .banner {
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.home .banner {
   position: fixed;
   width: 100%;
   padding: 1rem 0;
