@@ -37,8 +37,9 @@
               Language
               <span class="footer__content--btmLanguageSelect">
                <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
+            </span>            
             </span>
-            <span class="footer__content--btmSocials">
+          <span class="footer__content--btmSocials">
               <ul class="social-list">
                 <li>
                   <a href="#!">
@@ -62,8 +63,6 @@
                 </li>
               </ul>
             </span>
-            </span>
-          
           </div>
           
         </div>
