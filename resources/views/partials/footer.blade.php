@@ -5,16 +5,16 @@
         <div class="footer-content--btmLeft"></div>
         <div class="footer-content--center"></div>
         <div class="footer-content--btmRight">
-          <form class="footer__form--signup" action="" method="GET">
+          <form class="footer__form--signup" action="/thank-you" method="GET">
             <label for="signup">
               Sign Up For Our Newsletter
               </label>
               <input 
-                type="text" 
+                type="email" 
                 id="signup" 
                 class="signup" 
                 name="signup" 
-                placeholder="Enter Your Email Address" />
+                placeholder="Enter Your Email Address" required />
             <input type="submit" value="Subscribe" class="footer__signUp--btn">
           </form>
         </div>
