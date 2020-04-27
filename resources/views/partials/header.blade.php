@@ -11,8 +11,13 @@
     <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-      <span class="nav__LoggedIn--user">Logged In As <span class="username"><a href="">sp da iLL kid</a></span></span>
+      @endif      
+      @if(is_user_logged_in() ) @php global $current_user; wp_get_current_user($current_user); @endphp
+            <span class="nav__LoggedIn--user">Logged In As <span>
+              <a href="" class="username">
+                @php echo $current_user->user_login; @endphp
+              </a></span></span>  
+          @endif
     </nav>
     <div class="socials">
       <ul class="social-list">
