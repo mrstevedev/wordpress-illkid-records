@@ -2,10 +2,6 @@
   @extend .nav-item;
 }
 
-.nav > li > a {
-  padding-bottom: 0 !important;
-}
-
 .banner .nav a {
   @extend .nav-link;
 }
@@ -21,15 +17,18 @@
 .nav-primary {
   position: relative;
   display: flex;
+  align-items: center;
 }
 
 .nav__LoggedIn--user {
   position: relative;
-  right: -1rem;
+  right: -2rem;
   top: -1px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8rem;
+  display: flex;
+  align-items: center;
 
   .username {
     color: #bdbdbd;
