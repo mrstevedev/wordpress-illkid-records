@@ -90,3 +90,22 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+// Create Custom Post Type 'Subscriptions'
+function create_posttype() {
+    register_post_type( 'subscriptions', 
+        // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Subscriptions' ),
+                'singular_name' => __( 'Subscription' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'subscriptions'),
+            'show_in_rest' => true
+        )
+    );
+}
+// Hook up function to theme setup
+add_action( 'init', 'create_posttype' );
