@@ -24,18 +24,18 @@ ul {
   font-display: swap;
 }
 
-.current-menu-item a {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100% !important;
-    height: 2px;
-    display: block;
-    margin-top: -3px;
-    right: 0;
-    background: #333;
-  }
-}
+// .current-menu-item a {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100% !important;
+//     height: 2px;
+//     display: block;
+//     margin-top: -3px;
+//     right: 0;
+//     background: #333;
+//   }
+// }
 
 .back-to-top {
   position: fixed;
@@ -56,12 +56,12 @@ ul {
   list-style: none;
   background: rgba(0, 0, 0, 0.9);
   padding: 0.8em 0;
-  left: -86px;
+  left: -68px;
   width: 236px;
   text-align: left;
   font-weight: 700;
   display: none;
-  top: 1.6rem;
+  top: 3.24rem;
 
   &::before {
     position: absolute;
@@ -111,26 +111,7 @@ ul {
       color: #333;
       font-size: 13px;
       position: relative;
-      padding: 0 !important;
-      padding-bottom: 1rem !important;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        display: block;
-        margin-top: -3px;
-        right: 0;
-        background: #333;
-        transition: width 0.2s ease;
-      }
-
-      &:hover::after {
-        width: 100%;
-        left: 0;
-        background: #333;
-      }
+      padding: 1rem !important;
     }
   }
 }
@@ -173,24 +154,18 @@ ul {
   }
 }
 
-#menu-item-64 {
-  a {
-    padding: 0 !important;
-    position: relative;
-    bottom: 2px;
-  }
-}
-
 .banner {
   width: 100%;
-  padding: 1rem 0;
   z-index: 10;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .home .banner {
   position: fixed;
   width: 100%;
-  padding: 1rem 0;
+  // padding: 1rem 0;
   z-index: 10;
   // background: #fff;
   // box-shadow: 0 0 2px #ccc;
@@ -252,10 +227,10 @@ ul {
   border-radius: 100%;
   box-shadow: 0 1px 0 #bbb;
   position: absolute;
-  right: -19px;
+  right: -7px;
   padding: 7px;
   background: #353535;
-  bottom: 2px;
+  bottom: 18px;
 }
 
 .cart-total-number {
