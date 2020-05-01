@@ -1,3 +1,18 @@
+.username,
+.cta-link-text {
+  text-decoration: none;
+  background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(204, 92, 97, 0.35) calc(50% - 9px), rgba(204, 92, 97, 0.35) 100%);
+  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+  background-size: 100% 200%;
+}
+
+.username:hover,
+.cta-link-text:hover {
+  background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(204, 92, 97, 0.35) calc(50% - 9px), rgba(204, 92, 97, 0.35) 100%);
+  background-position: 0 100%;
+  color: #fff;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
@@ -31,8 +46,9 @@
   align-items: center;
 
   .username {
-    color: #bdbdbd;
+    color: #af5858;
     position: relative;
-    left: 3px;
+    left: 6px;
+    text-decoration: none;
   }
 }
