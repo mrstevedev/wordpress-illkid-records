@@ -32,3 +32,56 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+// Contact Page
+
+.contact .wp-block-columns {
+  width: 1100px;
+  padding: 0 0 8rem 0;
+}
+
+.wpcf7-form label,
+.wpcf7-form p {
+  width: 100%;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 6px;
+  text-indent: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  height: 42px;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 6px;
+  height: 120px;
+  text-indent: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+  background: #383838;
+  color: #fff;
+  width: 100%;
+  padding: 0.7rem 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.wpcf7-form {
+  padding: 0 4rem;
+}
+
+.contact__form--right {
+  padding: 1.3rem 0;
+}
