@@ -14,7 +14,7 @@
       @endif      
       @if(is_user_logged_in() ) @php global $current_user; wp_get_current_user($current_user); @endphp
             <span class="nav__LoggedIn--user">Logged In As <span>
-              <a href="" class="username">
+              <a href="/my-account" class="username">
                 @php echo $current_user->user_login; @endphp
               </a></span></span>  
           @endif
