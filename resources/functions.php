@@ -131,3 +131,12 @@ add_action( 'init', 'create_posttype' );
 // 	return $can_edit;
 // }
 // add_filter('use_block_editor_for_post_type', 'wplook_activate_gutenberg_products', 10, 2);
+
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+    add_filter('upload_mimes', 'add_file_types_to_uploads');
+    
