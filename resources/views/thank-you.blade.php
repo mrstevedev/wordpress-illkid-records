@@ -2,6 +2,17 @@
   Template Name: Thank You Template
 --}}
 
+@php
+$email = $_GET['signup'];
+$to = $email;
+$subject = 'Thank you for subscribing';
+$message = 'This is a the template message';
+$headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+wp_mail( $to, $subject, $message, $headers );
+
+@endphp
+
 @extends('layouts.app')
 
 @section('content')
