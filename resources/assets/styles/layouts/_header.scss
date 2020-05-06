@@ -1,20 +1,24 @@
 .username,
-.cta-link-text {
-  text-decoration: none;
+.cta-link-text,
+.content a {
+  font-weight: bold;
+  color: #af5858;
   background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(204, 92, 97, 0.35) calc(50% - 9px), rgba(204, 92, 97, 0.35) 100%);
   transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
   background-size: 100% 200%;
 }
 
 .username:hover,
-.cta-link-text:hover {
+.cta-link-text:hover,
+.content a:hover {
+  color: #af5858;
+  text-decoration: none;
   background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(204, 92, 97, 0.35) calc(50% - 9px), rgba(204, 92, 97, 0.35) 100%);
   background-position: 0 100%;
-  color: #fff;
 }
 
 .navbar {
-  padding: 0.02rem 1rem;
+  padding: 0.02rem 0;
 }
 
 .banner .nav li {
