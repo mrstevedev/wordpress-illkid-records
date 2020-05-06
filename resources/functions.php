@@ -7,6 +7,8 @@
 use Roots\Sage\Config;
 use Roots\Sage\Container;
 
+use function App\template;
+
 /**
  * Helper function for prettying up errors
  * @param string $message
@@ -100,21 +102,32 @@ function create_posttype() {
                 'name' => __( 'Subscriptions' ),
                 'singular_name' => __( 'Subscription' )
             ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'subscriptions'),
-            'show_in_rest' => true
+            'public'        => true,
+            'has_archive'   => true,
+            'rewrite'       => array('slug' => 'subscriptions'),
+            'show_in_rest'  => true,
+            'template'      => array(
+             
+                array(
+                    'core/column',
+                    array(),
+                    array(
+                        array( 'core/heading', array( 'placeholder' => 'Subscriber Name' ) ),
+                        array( 'core/paragraph', array( 'placeholder' => 'Subscriber Email' ) )
+                    ),
+                ),
+            ),
         )
     );
 }
 // Hook up function to theme setup
 add_action( 'init', 'create_posttype' );
 
-function wplook_activate_gutenberg_products($can_edit, $post_type){
-	if($post_type == 'product'){
-		$can_edit = true;
-	}
+// function wplook_activate_gutenberg_products($can_edit, $post_type){
+// 	if($post_type == 'product'){
+// 		$can_edit = true;
+// 	}
 	
-	return $can_edit;
-}
-add_filter('use_block_editor_for_post_type', 'wplook_activate_gutenberg_products', 10, 2);
+// 	return $can_edit;
+// }
+// add_filter('use_block_editor_for_post_type', 'wplook_activate_gutenberg_products', 10, 2);
