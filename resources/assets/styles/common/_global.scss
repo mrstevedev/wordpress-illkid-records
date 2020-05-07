@@ -164,7 +164,7 @@ ul {
 
 .banner > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -215,13 +215,10 @@ ul {
 }
 
 .cart-total {
-  border-radius: 100%;
-  box-shadow: 0 1px 0 #bbb;
   position: absolute;
   right: -7px;
   padding: 7px;
-  background: #353535;
-  bottom: 18px;
+  bottom: 10px;
 }
 
 .cart-total-number {
