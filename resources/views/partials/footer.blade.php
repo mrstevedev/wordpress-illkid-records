@@ -17,7 +17,7 @@
         <div class="footer-content--btmLeft"></div>
         <div class="footer-content--center"></div>
         <div class="footer-content--btmRight">
-          <form class="footer__form--signup" action="/thank-you" method="GET">
+          <form class="footer__form--signup" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
             <label for="signup">
               Sign Up For Our Newsletter
               </label>
@@ -27,6 +27,7 @@
                 class="signup" 
                 name="signup" 
                 placeholder="Enter Your Email Address" required />
+                <input type="hidden" name="action" value="contact_form">
             <input type="submit" value="Subscribe" class="footer__signUp--btn">
           </form>
         </div>
