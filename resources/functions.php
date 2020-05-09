@@ -140,3 +140,46 @@ function add_file_types_to_uploads($file_types){
     }
     add_filter('upload_mimes', 'add_file_types_to_uploads');
     
+    add_filter( 'woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
+    function wc_refresh_mini_cart_count($fragments){
+        ob_start();
+        ?>
+        <div class="cart-total">
+            <?php echo WC()->cart->get_cart_contents_count(); ?>
+        </div>
+        <?php
+            $fragments['.cart-total'] = ob_get_clean();
+        return $fragments;
+}
+
+function prefix_send_email_to_admin() {
+
+    $email = strtolower($_POST['signup']);
+    $to = $email;
+    $subject = 'Thank you for subscribing';
+    $message = 'This is a the template message';
+    $headers = 'From: '. $email . "\r\n" .
+        'Reply-To: ' . $email . "\r\n";
+            
+    wp_mail( $to, $subject, $message, $headers );
+
+        $post_content = $email;
+            $my_post = array(
+                'post_type'    => 'subscriptions',
+                'post_title'   => $email,
+                'post_content' => $post_content,
+                'post_author'   => 1,
+                'post_status'  => 'publish'
+            );
+
+        wp_insert_post( $my_post );
+
+
+        header('Location: /thank-you');
+    
+        // Sanitize the POST field
+        // Generate email content
+        // Send to appropriate email
+}
+add_action( 'admin_post_nopriv_contact_form', 'prefix_send_email_to_admin' );
+add_action( 'admin_post_contact_form', 'prefix_send_email_to_admin' );
