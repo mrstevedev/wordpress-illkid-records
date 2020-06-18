@@ -17,3 +17,38 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+.woocommerce-form-login .woocommerce-form-row {
+  display: block;
+}
+
+/** Login Form */
+.woocommerce-account .woocommerce .woocommerce-form-login {
+  width: 400px;
+  border: none;
+  margin: 0 -1rem;
+}
+
+#username,
+#password,
+#reg_email {
+  background: #f3f3f3;
+  border: none;
+  height: 36px;
+  border-radius: 6px;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+  margin: 0 1rem;
+}
+
+.woocommerce form.register {
+  border: none;
+  margin: 0;
+}
+
+.col-2 {
+  max-width: 100%;
+}
