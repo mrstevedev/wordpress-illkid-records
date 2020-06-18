@@ -266,6 +266,7 @@ ul {
   font-weight: bold;
   z-index: 9;
   width: 100%;
+  display: none;
 
   .cookies-notification-close {
     display: flex;
@@ -319,6 +320,10 @@ ul {
   .cookies__decline--btn:hover {
     background: #f5f5f5;
   }
+}
+
+.cookies-notification.show {
+  display: block !important;
 }
 
 @media (max-width: 545px) {
