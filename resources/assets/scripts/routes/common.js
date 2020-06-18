@@ -5,28 +5,36 @@ export default {
     const cookiesAcceptBtn = document.querySelector(
       '.cookies__accept--btn'
     );
-    const cookiesChangePreferencesBtn = document.querySelector(
+    const cookiesMoreBtn = document.querySelector(
       '.cookies__decline--btn'
     );
     const cookiesNotification = document.querySelector(
       '.cookies-notification'
     );
+
     cookiesAcceptBtn.addEventListener('click', () => {
+      console.log('Accept button clicked');
+
+      // Store cookie
+      document.cookie = 'cookieNotificationShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
       cookiesAcceptBtn.style.background = '#568c9b';
       cookiesAcceptBtn.style.color = '#fff';
 
       cookiesNotification.style.display = 'none';
+
     });
 
-    cookiesChangePreferencesBtn.addEventListener('click', () => {
-      cookiesChangePreferencesBtn.style.background = '#568c9b';
-      cookiesChangePreferencesBtn.style.color = '#fff';
+    cookiesMoreBtn.addEventListener('click', () => {
+      cookiesMoreBtn.style.background = '#568c9b';
+      cookiesMoreBtn.style.color = '#fff';
     });
 
     //if cookie hasn't been set...
     if (document.cookie.indexOf('CookieNotificationShown') < 0) {
-      // Display block / show modal
-      cookiesNotification.style.display = 'block';
+
+      setTimeout(() => {
+        cookiesNotification.style.display = 'block';
+      }, 6000);
 
       cookiesAcceptBtn.addEventListener('click', () => {
         // Store cookie
