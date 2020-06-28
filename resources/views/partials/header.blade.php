@@ -19,7 +19,12 @@
             <span class="nav__LoggedIn--user">Logged In As <span>
               <a href="/my-account" class="username">
                 @php echo $current_user->user_login; @endphp
-              </a></span></span>  
+              </a></span></span>
+              @else 
+              <span class="nav__LoggedIn--user">Not Logged-In? <span>
+                <a href="/my-account" class="username">
+                  Sign-In
+                </a></span></span>
           @endif
     </nav>
     <div class="socials">
