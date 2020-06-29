@@ -52,7 +52,7 @@
                <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
             </span>            
             </span>
-          <span class="footer__content--btmSocials">
+          {{-- <span class="footer__content--btmSocials">
               <ul class="social-list">
                 <li>
                   <a href="#!">
@@ -75,9 +75,12 @@
                   </a>
                 </li>
               </ul>
-            </span>
+            </span> --}}
           </div>
-          
+          <div class="back-to-top"
+          ">
+          <a href="#!"><i class="fas fa-long-arrow-alt-up"></i> Back to Top</a>
+      </div>
         </div>
       </div>
     </div>
