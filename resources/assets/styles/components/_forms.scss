@@ -31,7 +31,9 @@
 
 #username,
 #password,
-#reg_email {
+#reg_email,
+.woocommerce-billing-fields__field-wrapper .input-text,
+.woocommerce-shipping-fields__field-wrapper .input-text {
   background: #f3f3f3;
   border: none;
   height: 36px;
@@ -40,15 +42,116 @@
   font-weight: bold;
 }
 
-.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
-  margin: 0 1rem;
+.woocommerce-additional-fields__field-wrapper .form-row .input-text {
+  border: none;
+  background: #f4f4f4;
+  border-radius: 6px;
+  height: 120px;
+  text-indent: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 1rem 0.7rem;
 }
+
+.select2-container--default .select2-selection--single {
+  border: none;
+  border-radius: 4px;
+  background: #f3f3f3;
+  height: 36px;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-top: 3px;
+}
+
+.select2-dropdown {
+  border: none;
+}
+
+.select2-results {
+  padding: 0;
+  background: #f5f2f2;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: none;
+  background: #f5f0f0;
+}
+
+.checkout .woocommerce {
+  padding: 6rem 0 11rem 0 !important;
+}
+
+// .woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+//   margin: 0 1rem;
+// }
 
 .woocommerce form.register {
   border: none;
   margin: 0;
 }
 
+.woocommerce-checkout .col-1 {
+  max-width: 100%;
+  padding: 0;
+}
+
 .col-2 {
   max-width: 100%;
+}
+
+.form-row {
+  display: block;
+}
+
+.woocommerce-info {
+  padding: 1em 2em 1em 1em;
+  border-top: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.woocommerce-info::before {
+  content: "";
+}
+
+.woocommerce-checkout #payment {
+  background: none;
+}
+
+.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout {
+  margin: 0 0 2rem;
+}
+
+// Comment Form
+.comment-form {
+  .form-submit {
+    padding: 1rem 0;
+  }
+  
+  #comment {
+    width: 100%;
+    border: none;
+    background: #f4f4f4;
+    border-radius: 6px;
+    height: 120px;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    width: 100%;
+    border: none;
+    background: #f4f4f4;
+    border-radius: 6px;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 42px;
+  }
 }
