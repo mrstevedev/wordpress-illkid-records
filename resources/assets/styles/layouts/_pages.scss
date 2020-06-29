@@ -1,5 +1,5 @@
 // Woocommerce Homepage 4 Column
-.woocommerce.columns-4 {
+.woocommerce.columns-3 {
   padding: 0 15rem !important;
 }
 
@@ -12,10 +12,14 @@
 
 .artist-name {
   color: #727272;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .artist-release {
   color: #262626;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .price {
@@ -86,7 +90,9 @@ input.wpcf7-form-control.wpcf7-submit {
   padding: 1.3rem 0;
 }
 
-.woocommerce-account .woocommerce {
+.woocommerce-account .woocommerce,
+.cart .woocommerce,
+.checkout .woocommerce {
   padding: 0 0 11rem 0;
   max-width: 1140px;
   margin: 0 auto;
@@ -100,3 +106,85 @@ input.wpcf7-form-control.wpcf7-submit {
 .ikr__cookie--policy {
   padding: 0 0 8rem;
 }
+
+.single-product .main {
+  padding: 6rem 5rem;
+}
+
+time.updated,
+p.byline.author.vcard {
+  display: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+  background: none;
+  font-weight: bold;
+  padding: 0.7em;
+}
+
+// Product Page
+.woocommerce-product-details__short-description p {
+  padding: 0.5rem 0;
+}
+
+.woocommerce .quantity .qty {
+  background: #eaeaea;
+  border: none;
+  padding: 0.34rem;
+}
+
+.woocommerce .button.alt {
+  background: #333 !important;
+}
+
+.woocommerce .product .woocommerce-tabs .panel {
+  padding: 2rem 1rem !important;
+}
+
+nav.woocommerce-pagination {
+  margin: 3rem 0;
+}
+
+.woocommerce nav.woocommerce-pagination {
+  text-align: right;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+  border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+  background: #dedede;
+  color: #6d6d6d;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+  background-image: none;
+}
+
+// Remove Modal Styles //
+
+.modal-header {
+  border-bottom: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+}
+
+.modal-content {
+  border: none;
+  background-color: transparent;
+}
+
+.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin: 5.75rem auto;
+  }
+}
+
