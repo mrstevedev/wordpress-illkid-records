@@ -98,6 +98,15 @@ input.wpcf7-form-control.wpcf7-submit {
   margin: 0 auto;
 }
 
+.woocommerce-privacy-policy-text {
+  p {
+    font-family: "HelveticaNeueMed", sans-serif;
+    color: #0c0c0c;
+    line-height: 26px;
+    padding: 1rem 0;
+  }
+}
+
 .woocommerce-MyAccount-navigation ul {
   font-size: 1.4rem;
   list-style: none;
