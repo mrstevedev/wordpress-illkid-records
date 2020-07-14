@@ -14,8 +14,25 @@
     {{-- @php dynamic_sidebar('sidebar-footer') @endphp --}}
     <div class="footer__content--top">
       <div class="container-fluid">
-        <div class="footer-content--btmLeft"></div>
-        <div class="footer-content--center"></div>
+        <div class="footer-content--btmLeft">
+          <label for="signup">
+            Payment Methods
+            </label>
+            <ul class="footer__content--footer-top-list">
+              <li><img src="/wp-content/uploads/2020/07/stripe__logo.png" /></li>
+              <li><img src="/wp-content/uploads/2020/07/paypal__logo.png" /></li>
+              <li><img src="/wp-content/uploads/2020/07/googlepay__logo.png" /></li>             
+            </ul>
+        </div>
+        <div class="footer-content--center">
+          <label for="signup">
+            Shipping Methods
+            </label>
+            <ul class="footer__content--footer-top-list">
+                <li><img src="/wp-content/uploads/2020/07/fedex__logo.png" /></li>
+                <li><img src="/wp-content/uploads/2020/07/dhl__logo.png" /></li>                
+            </ul>
+        </div>
         <div class="footer-content--btmRight">
           <form class="footer__form--signup" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST">
             <label for="signup">
@@ -46,12 +63,14 @@
         </div>
         <div class="footer__content--btmRight">
           <div class="footer__content--btmLanguage">
-            <span class="footer__content--btmLanguagTxt">
-              Language
-              <span class="footer__content--btmLanguageSelect">
-               <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
-            </span>            
-            </span>
+            <a href="#">
+              <span class="footer__content--btmLanguagTxt">
+                Language
+                <span class="footer__content--btmLanguageSelect">
+                <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
+                </span>            
+              </span>
+            </a>
           {{-- <span class="footer__content--btmSocials">
               <ul class="social-list">
                 <li>
