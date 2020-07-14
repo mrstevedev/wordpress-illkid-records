@@ -9,9 +9,10 @@
       <span class="logo-bottom">records</span>
     </a>
     <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif      
@@ -26,6 +27,7 @@
                   Sign-In
                 </a></span></span>
           @endif
+        </div>
     </nav>
     <div class="socials">
       <ul class="social-list">
