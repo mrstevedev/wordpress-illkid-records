@@ -25,8 +25,24 @@ ul {
 
 @font-face {
   font-family: helveticaneueblackcond;
-  src: url("../fonts/HelveticaNeueBlackCond.woff2") format("woff2"), url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
+  src: url("../../fonts/HelveticaNeueBlackCond.woff2") format("woff2"), url("../../fonts/HelveticaNeueBlackCond.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueMed";
+  src: url("../../fonts/HelveticaNeueMedium.woff2") format("woff2"), url("../../fonts/HelveticaNeueMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("../../fonts/HelveticaNeueBold.woff2") format("woff2"), url("../../fonts/HelveticaNeueBold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
