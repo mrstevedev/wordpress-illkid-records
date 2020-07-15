@@ -5,7 +5,10 @@
   @php wp_head() @endphp
   <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueBlackCond.woff" type="font/woff" crossorigin />
   <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueBlackCond.woff2" type="font/woff" crossorigin />
-  <link rel="preload" as="font" href="#!" type="font/woff2" crossorigin />
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueBold.woff" type="font/woff" crossorigin />
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueBold.woff2" type="font/woff" crossorigin />
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueMedium.woff" type="font/woff" crossorigin />
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueMedium.woff2" type="font/woff" crossorigin />
   <link rel="stylesheet" href="https://use.typekit.net/nlf5xci.css">
 
     @if(is_front_page()) 
