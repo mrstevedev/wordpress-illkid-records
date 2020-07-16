@@ -149,16 +149,11 @@ function wc_refresh_mini_cart_count($fragments){
             <?php echo WC()->cart->get_cart_contents_count(); ?>
         </div>
 
-        <?php 
-            if (sizeof( WC()->cart->get_cart() ) > 0 ) { 
-                ?>
+        <?php  if (sizeof( WC()->cart->get_cart() ) > 0 ) {  ?>
                 <div class="cart-total pop" style="opacity: 1;">
                     <?php echo WC()->cart->get_cart_contents_count(); ?>
                 </div>
-                <?php
-
-              }
-        ?>
+                <?php } ?>
     <?php
     $fragments['.cart-total'] = ob_get_clean();
     return $fragments;
