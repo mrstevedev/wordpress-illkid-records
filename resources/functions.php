@@ -137,19 +137,32 @@ function add_file_types_to_uploads($file_types){
     $new_filetypes['svg'] = 'image/svg';
     $file_types = array_merge($file_types, $new_filetypes );
     return $file_types;
-    }
-    add_filter('upload_mimes', 'add_file_types_to_uploads');
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
     
-    add_filter( 'woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
-    function wc_refresh_mini_cart_count($fragments){
-        ob_start();
-        ?>
-        <div class="cart-total">
+add_filter( 'woocommerce_add_to_cart_fragments', 'wc_refresh_mini_cart_count');
+
+function wc_refresh_mini_cart_count($fragments){
+    ob_start();
+    ?>
+        <div class="cart-total" style="opacity: 0;">
             <?php echo WC()->cart->get_cart_contents_count(); ?>
         </div>
-        <?php
-            $fragments['.cart-total'] = ob_get_clean();
-        return $fragments;
+
+        <?php 
+            if (sizeof( WC()->cart->get_cart() ) > 0 ) { 
+                // do something
+                ?>
+                <div class="cart-total pop" style="opacity: 1;">
+                    <?php echo WC()->cart->get_cart_contents_count(); ?>
+                </div>
+                <?php
+
+              }
+        ?>
+    <?php
+    $fragments['.cart-total'] = ob_get_clean();
+    return $fragments;
 }
 
 function prefix_send_email_to_admin() {
