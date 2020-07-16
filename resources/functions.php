@@ -151,7 +151,6 @@ function wc_refresh_mini_cart_count($fragments){
 
         <?php 
             if (sizeof( WC()->cart->get_cart() ) > 0 ) { 
-                // do something
                 ?>
                 <div class="cart-total pop" style="opacity: 1;">
                     <?php echo WC()->cart->get_cart_contents_count(); ?>
