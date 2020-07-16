@@ -38,6 +38,14 @@
   background: rgba(255, 255, 255, 1) !important;
 }
 
+.pop {
+  animation: pop 0.3s linear 1;
+}
+
+@keyframes pop {
+  50% { transform: scale(1.2); }
+}
+
 .nav__LoggedIn--user {
   position: relative;
   right: -2rem;
