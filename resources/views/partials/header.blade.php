@@ -1,14 +1,13 @@
 <header class="banner" 
   data-aos="fade-down" 
-  data-aos-delay="400"
-  data-aos-duration="10"
-  data-aos-easing="ease-in-out">
-  <div class="container-fluid">
-    <a class="brand logo" href="{{ home_url('/') }}">
-      <span class="logo-top">illkid</span>
-      <span class="logo-bottom">records</span>
-    </a>
+  data-aos-delay="900"
+  data-aos-duration="130">
+  <div class="container-fluid">    
     <nav class="navbar navbar-expand-lg">
+      <a class="brand logo" href="{{ home_url('/') }}">
+        <span class="logo-top">illkid</span>
+        <span class="logo-bottom">records</span>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
