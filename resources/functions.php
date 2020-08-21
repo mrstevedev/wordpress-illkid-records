@@ -173,8 +173,9 @@ function prefix_send_email_to_admin() {
         padding: 1rem 0 10rem 0;
         color: #5a5a5a;
         flex-direction: column;
+        justify-content: center;
         align-items: center;">
-        <div style="display: flex; padding: 1rem 0; width: 500px;">
+        <div style="display: flex; padding: 1rem 0; width: 500px; flex-direction: column; justify-content: center;">
             <a class="brand logo" href="http://illkidrecords.local/" style="text-transform: uppercase;
             color: #333;
             text-decoration: none;
@@ -197,8 +198,8 @@ function prefix_send_email_to_admin() {
             align-items: center;
             width: 500px;
             padding-bottom: 2rem;
-            border-radius: 6px;">
-            <div class="hero__img" style="background:url(http://illkidrecords.local/wp-content/uploads/2020/07/email__header.svg) no-repeat;    
+            border-radius: 6px; flex-direction: column; align-items: center;">
+            <div class="hero__img" style="background:url(https://illkidrecords.com/wp-content/uploads/2020/08/email__header.svg) no-repeat;
             height: 160px;
             width: 100%;"></div>
                 <div class="content" style="padding: 3rem 0 0 0">
@@ -312,3 +313,14 @@ function prefix_send_email_to_admin() {
 }
 add_action( 'admin_post_nopriv_contact_form', 'prefix_send_email_to_admin' );
 add_action( 'admin_post_contact_form', 'prefix_send_email_to_admin' );
+
+
+/**
+ * Change number or products per row to 3
+ */
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
+}
