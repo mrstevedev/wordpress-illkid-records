@@ -4,7 +4,7 @@
     <button class="cookies__accept--btn btn">
       Accept
     </button>
-    <a href="http://illkidrecords.local/cookie-policy">
+    <a href="/cookie-policy">
       <button class="cookies__decline--btn btn">More 
   </button>
 </a>
@@ -19,9 +19,9 @@
             Payment Methods
             </label>
             <ul class="footer__content--footer-top-list">
-              <li><img src="/wp-content/uploads/2020/07/stripe__logo.png" /></li>
-              <li><img src="/wp-content/uploads/2020/07/paypal__logo.png" /></li>
-              <li><img src="/wp-content/uploads/2020/07/googlepay__logo.png" /></li>             
+              <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/Stripe-logo-slate.svg" width="60" /></li>
+              <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/PayPal.svg" width="80" /></li>
+              <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/Google_Pay_GPay_Logo.svg" width="50" /></li>             
             </ul>
         </div>
         <div class="footer-content--center">
@@ -29,8 +29,9 @@
             Shipping Methods
             </label>
             <ul class="footer__content--footer-top-list">
-                <li><img src="/wp-content/uploads/2020/07/fedex__logo.png" /></li>
-                <li><img src="/wp-content/uploads/2020/07/dhl__logo.png" /></li>                
+                <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/FedEx_Express.svg" width="60" /></li>
+                <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/PinClipart.com_post-office-clip-art_2042928.png" width="40" /></li>
+                <li><img src="@php echo bloginfo( 'url' ) @endphp/wp-content/uploads/2020/08/United_Parcel_Service_logo_2014.svg" width="25" /></li>
             </ul>
         </div>
         <div class="footer-content--btmRight">
@@ -38,14 +39,7 @@
             <label for="signup">
               Sign Up For Our Newsletter
               </label>
-              <input 
-                type="email" 
-                id="signup" 
-                class="signup" 
-                name="signup" 
-                placeholder="Enter Your Email Address" required />
-                <input type="hidden" name="action" value="contact_form">
-            <input type="submit" value="Subscribe" class="footer__signUp--btn">
+            
           </form>
         </div>
       </div>
@@ -62,16 +56,16 @@
           <p class="footer__content--copyright">&copy; ILLKID RECORDS 2020</p>
         </div>
         <div class="footer__content--btmRight">
-          <div class="footer__content--btmLanguage">
-            <a href="#">
+          {{-- <div class="footer__content--btmLanguage">
+            <a class="languageTogglerBtn" href="#">
               <span class="footer__content--btmLanguagTxt">
                 Language
                 <span class="footer__content--btmLanguageSelect">
-                <img src="http://illkidrecords.local/wp-content/uploads/2020/04/united-states-of-america.png" /> English
+                <img src="/wp-content/uploads/2020/04/united-states-of-america.png" /> English
                 </span>            
               </span>
             </a>
-          {{-- <span class="footer__content--btmSocials">
+            <span class="footer__content--btmSocials">
               <ul class="social-list">
                 <li>
                   <a href="#!">
@@ -94,11 +88,11 @@
                   </a>
                 </li>
               </ul>
-            </span> --}}
-          </div>
+            </span>
+          </div>--}}
           <div class="back-to-top"
           ">
-          <a href="#!"><i class="fas fa-long-arrow-alt-up"></i> Back to Top</a>
+          <a href="#top"><i class="fas fa-long-arrow-alt-up"></i> Back to Top</a>
       </div>
         </div>
       </div>
