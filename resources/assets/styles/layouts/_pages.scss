@@ -1,6 +1,6 @@
 // Woocommerce Homepage 4 Column
 .woocommerce.columns-3 {
-  padding: 0 15rem !important;
+  padding: 0 15rem;
 }
 
 .woocommerce-loop-product__title {
@@ -38,6 +38,28 @@
 }
 
 // Contact Page
+
+@media (max-width: 545px) {
+  .contact {
+    .wp-block-column {
+      padding: 0 2rem;
+    }
+
+    .wp-block-columns {
+      width: initial !important;
+    }
+
+    .wpcf7-form {
+      padding: 0;
+    }
+  }
+
+  .single-product {
+    .main {
+      padding: 6rem 1rem !important;
+    }
+  }
+}
 
 .contact .wp-block-columns {
   width: 1100px;
@@ -112,7 +134,7 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 .woocommerce-MyAccount-navigation ul {
-  font-size: 1.4rem;
+  font-size: 1rem;
   list-style: none;
 }
 
@@ -127,6 +149,36 @@ input.wpcf7-form-control.wpcf7-submit {
 time.updated,
 p.byline.author.vcard {
   display: none;
+}
+
+.wp-block-columns .wp-block-column a {
+  background-image: none;
+}
+
+.woocommerce .comments a,
+.woocommerce .wc-tabs a,
+.woocommerce .posted_in a,
+.woocommerce .mejs-horizontal-volume-slider,
+.woocommerce .woocommerce-MyAccount-content a,
+.woocommerce .woocommerce-cart-form__cart-item a,
+.woocommerce .woocommerce-info .showcoupon,
+.woocommerce .place-order a,
+.woocommerce .about_paypal,
+.woocommerce .about_paypal:hover,
+.woocommerce .mejs-horizontal-volume-slider:hover {
+  background-image: none;
+}
+
+.woocommerce .entry-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li a,
+.woocommerce .woocommerce-MyAccount-content ul li a {
+  background-image: none;
+  color: #333;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a,
@@ -152,7 +204,7 @@ p.byline.author.vcard {
 }
 
 .woocommerce .product .woocommerce-tabs .panel {
-  padding: 2rem 1rem !important;
+  padding: 2rem 0 !important;
 }
 
 nav.woocommerce-pagination {
@@ -172,8 +224,19 @@ nav.woocommerce-pagination {
   color: #6d6d6d;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+.woocommerce .product .woocommerce-tabs .tabs li.active a {
   background-image: none;
+}
+
+// Cart Styles 
+.woocommerce-cart {
+  .woocommerce {
+    margin: 2rem auto;
+
+    .shop_table {
+      border: none;
+    }
+  }
 }
 
 // Remove Modal Styles //
@@ -201,3 +264,10 @@ nav.woocommerce-pagination {
   }
 }
 
+@media (max-width: 575px) {
+  .woocommerce-cart {
+    .woocommerce {
+      margin: 2rem 1rem;
+    }
+  }
+}
