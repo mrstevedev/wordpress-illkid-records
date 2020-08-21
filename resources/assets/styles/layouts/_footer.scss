@@ -1,6 +1,4 @@
 .content-info {
-  height: 372px;
-
   .container-fluid {
     display: flex;
     justify-content: space-around;
@@ -9,7 +7,7 @@
 
   .footer__content--top {
     background: #f2f2f2;
-    height: 292px;
+    height: 200px;
     display: flex;
     align-items: center;
 
@@ -83,8 +81,12 @@
   }
 }
 
+.footer__form--signup {
+  position: relative;
+}
+
 .signup {
-  width: 255px;
+  width: 200px;
   height: 56px;
   text-indent: 1rem;
   color: #333;
@@ -96,7 +98,6 @@
 }
 
 .footer__signUp--btn {
-  width: 120px;
   height: 56px;
   outline: none;
   border: none;
@@ -109,13 +110,50 @@
   font-weight: bold;
   font-size: 0.8rem;
   box-shadow: 0 2px 0 #000;
-  position: relative;
-  top: -2px;
-  right: 1px;
+  position: absolute;
+  top: 26px;
+  right: -111px;
 }
 
 ::placeholder {
   text-transform: uppercase;
   color: #ccc;
   font-size: 13px;
+}
+
+@media (max-width: 545px) {
+  .content-info {
+    .container-fluid {
+      display: initial;
+    }
+
+    .footer-content--btmLeft,
+    .footer-content--center,
+    .footer-content--btmRight {
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  .signup {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .footer__signUp--btn {
+    width: 100%;
+    padding: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .footer__content--top {
+    height: initial !important;
+    padding: 5rem 2rem;
+  }
+
+  .footer__content--btm {
+    height: initial !important;
+    padding: 2rem;
+  }
 }
