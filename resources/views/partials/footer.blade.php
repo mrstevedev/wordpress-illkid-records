@@ -39,7 +39,14 @@
             <label for="signup">
               Sign Up For Our Newsletter
               </label>
-            
+              <input 
+                type="email" 
+                id="signup" 
+                class="signup" 
+                name="signup" 
+                placeholder="Enter Your Email Address" required />
+                <input type="hidden" name="action" value="contact_form">
+            <input type="submit" value="Subscribe" class="footer__signUp--btn">
           </form>
         </div>
       </div>
