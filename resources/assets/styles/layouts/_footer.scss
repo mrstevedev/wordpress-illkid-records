@@ -35,6 +35,12 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    .footer-content--btmLeft {
+      .logo {
+        line-height: 0;
+      }
+    }
   }
 
   .footer__content--copyright {
