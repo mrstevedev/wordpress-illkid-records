@@ -2,7 +2,7 @@
   data-aos="fade-down" 
   data-aos-delay="900"
   data-aos-duration="130">
-  <div class="container-fluid">
+  <div class="container">
     <nav class="navbar navbar-expand-lg">
       <a class="brand logo" href="{{ home_url('/') }}">
         <span class="logo-top">illkid</span>
