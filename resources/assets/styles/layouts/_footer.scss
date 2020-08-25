@@ -36,6 +36,11 @@
     align-items: center;
     position: relative;
 
+    .container {
+        display: flex;
+        justify-content: space-between;    
+    }
+
     .footer-content--btmLeft {
       .logo {
         line-height: 0;

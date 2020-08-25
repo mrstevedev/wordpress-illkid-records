@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="footer__content--btm">
-      <div class="container-fluid">
+      <div class="container">
         <div class="footer-content--btmLeft">
           <a class="brand logo" href="{{ home_url('/') }}">
             <span class="logo-top">illkid</span>
