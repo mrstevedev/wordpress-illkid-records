@@ -164,119 +164,131 @@ function prefix_send_email_to_admin() {
     $email = strtolower($_POST['signup']);
     $to = $email;
     $subject = 'Thank you for subscribing';
-    $message = '
-    <div style="font-family: sans-serif;
-        background: #f7f7f7;
-        width: 100%;
+    $message = '<div style="font-family: sans-serif;
+    background: #f9f9f9;
+    padding: 1rem 0 10rem 0;
+    margin: 0 auto;
+    width: 100%;
         display: flex;
-        font-weight: bold;
-        padding: 1rem 0 10rem 0;
-        color: #5a5a5a;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;">
-        <div style="display: flex; padding: 1rem 0; width: 500px; flex-direction: column; justify-content: center;">
-            <a class="brand logo" href="http://illkidrecords.local/" style="text-transform: uppercase;
-            color: #333;
-            text-decoration: none;
-            font-family: helveticaneueblackcond, sans-serif;
-            font-weight: bold;
-            line-height: 13px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="54" viewBox="0 0 96 54">
-            <g id="Logo_Main" transform="translate(-883.755 -31.447)">
-              <text id="ILLKID_RECORDS" data-name="ILLKID
-          RECORDS" transform="translate(883.755 31.447)" fill="#ccc" font-size="21" font-family="HelveticaNeueBlackCond, HelveticaNeue"><tspan x="0" y="20">ILLKID</tspan><tspan fill="#2e2e2e" font-size="22"><tspan x="0" y="38">RECORDS</tspan></tspan></text>
-            </g>
-          </svg>
-            
-            </a>
-        </div>
-            <div class="inner" style="background: #fff;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 500px;
-            padding-bottom: 2rem;
-            border-radius: 6px; flex-direction: column; align-items: center;">
-            <div class="hero__img" style="background:url(https://illkidrecords.com/wp-content/uploads/2020/08/email__header.svg) no-repeat;
-            height: 160px;
-            width: 100%;"></div>
-                <div class="content" style="padding: 3rem 0 0 0">
-                    <p style="font-weight: bold; font-size: 1.54rem; color: #333;">Thank you for subscribing</p>
-                </div>
+        flex-direction: column;
+        align-items: center;
+    color: #5a5a5a;
+    ">
+    <div style="display: flex; padding: 1rem 0; width: 500px;flex-direction: column; justify-content: flex-start;">
+       <div>
+          <a href="http://illkidrecords.local/" style="text-transform: uppercase;
+        color: #333;
+        text-decoration: none;
+        font-family: helveticaneueblackcond, sans-serif;
+        font-weight: bold;
+        line-height: 13px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="54" viewBox="0 0 96 54">
+          <g id="Logo_Main" transform="translate(-883.755 -31.447)">
+            <text id="ILLKID_RECORDS" data-name="ILLKID
+            RECORDS" transform="translate(883.755 31.447)" fill="#ccc" font-size="21" font-family="HelveticaNeueBlackCond, HelveticaNeue"><tspan x="0" y="20">ILLKID</tspan><tspan fill="#2e2e2e" font-size="22"><tspan x="0" y="38">RECORDS</tspan></tspan></text>
+          </g>
+      </svg>       
+        </a>
+      </div>
+    </div>
 
-                <div class="content" style="padding: 0rem 6rem;">
-                    <p style="font-weight: 600; color: #afafaf; font-size: 18px; line-height: 32px;">
-                        Some text here about the products available now. Some text about the latest product:
-                    </p>
-                </div>
 
-                <div class="content" style="padding: 3rem 2rem;">
-                    <button style="background: #3d5bd9;border-radius: 30px;border: none;
-                        outline: none;
-                        padding: 0.9rem 2rem;
-                        display: flex;
-                        align-items: center;
-                        color: #fff;
-                        cursor: pointer;
-                        font-size: 0.8rem;
-                        font-weight: bold;">View Online Store 
-                    
-                    <svg
-                        style="margin: 1px 0 0 8px;"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                        d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
-                        fill="currentColor"/>
-                    </svg>
-                  </button>
-                </div>             
-                 
-            </div>
-            <div class="footer" style="height:100px;padding: 2rem; text-align: center;">
-            <ul class="socials" style="    
-            display: flex;
-            list-style: none;
-            justify-content: center;
-            padding: 0;">
-                <li style="padding: 0 0.5rem;"><a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="9.4" height="17.18" viewBox="0 0 9.4 17.18">
-                <path id="facebook" d="M8.968,19.68h3.617V12.437h3.259l.358-3.6H12.585V7.021a.9.9,0,0,1,.9-.9H16.2V2.5H13.489A4.521,4.521,0,0,0,8.968,7.021V8.838H7.16l-.358,3.6H8.968Z" transform="translate(-6.802 -2.5)" fill="#333"/>
-              </svg>              
-                </a></li>
+     <table style="background: #fff;
+        width: 500px;
+        height: 600px;
+        padding-bottom: 2rem;
+        border-radius: 6px; flex-direction: column; align-items: center;">
+       
+        <tr>
+          <td style="background:url(https://illkidrecords.com/wp-content/uploads/2020/08/email__header.svg) no-repeat center;
+        height: 160px;
+        width: 500px;">
+          </td>
+           </tr>
+            <tr>
+              <td>
+                  <p style="font-weight: bold; font-size: 1.54rem; color: #333;text-align: center;">Thank you for subscribing</p>
+              </td>
+            </tr>
 
-                <li style="padding: 0 0.5rem;">
-                    <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                    <g id="instagram" transform="translate(-1 -1)">
-                      <path id="Path_1" data-name="Path 1" d="M11.5,7A4.5,4.5,0,1,0,16,11.5,4.5,4.5,0,0,0,11.5,7ZM8.8,11.5a2.7,2.7,0,1,0,2.7-2.7A2.7,2.7,0,0,0,8.8,11.5Z" transform="translate(-1.5 -1.5)" fill="#333" fill-rule="evenodd"/>
-                      <path id="Path_2" data-name="Path 2" d="M18,5a1,1,0,1,0,1,1A1,1,0,0,0,18,5Z" transform="translate(-3.2 -0.8)" fill="#333"/>
-                      <path id="Path_3" data-name="Path 3" d="M4.273,1A3.273,3.273,0,0,0,1,4.273V15.727A3.273,3.273,0,0,0,4.273,19H15.727A3.273,3.273,0,0,0,19,15.727V4.273A3.273,3.273,0,0,0,15.727,1ZM15.727,2.636H4.273A1.636,1.636,0,0,0,2.636,4.273V15.727a1.636,1.636,0,0,0,1.636,1.636H15.727a1.636,1.636,0,0,0,1.636-1.636V4.273A1.636,1.636,0,0,0,15.727,2.636Z" fill="#333" fill-rule="evenodd"/>
-                    </g>
-                  </svg>
-                  
-                    </a>
-                </li>
-                <li style="padding: 0 0.5rem;">
+            <tr>
+                <td>
+                  <p style="font-weight: 600; color: #afafaf; font-size: 18px; line-height: 32px; padding: 0 6rem;">
+                      Some text here about the products available now. Some text about the latest product:
+                  </p>
+                  </td>
+            </tr>
+
+            <tr style="padding: 3rem 2rem;">
+                <td>
+                      <button style="background: #3d5bd9;border-radius: 30px;border: none;
+                    outline: none;
+                    padding: 0.9rem 2rem;
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    font-weight: bold; margin: 0 auto;">View Online Store 
+                
+                <svg
+                    style="margin: 1px 0 0 8px;"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
+                    fill="currentColor"/>
+                </svg>
+              </button>
+                  </td>
+            </tr>             
+             
+        </table>
+
+        <div style="height:100px;padding: 2rem; text-align: center;">
+        <ul style="    
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;">
+            <li style="padding: 0 0.5rem;"><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.4" height="17.18" viewBox="0 0 9.4 17.18">
+            <path id="facebook" d="M8.968,19.68h3.617V12.437h3.259l.358-3.6H12.585V7.021a.9.9,0,0,1,.9-.9H16.2V2.5H13.489A4.521,4.521,0,0,0,8.968,7.021V8.838H7.16l-.358,3.6H8.968Z" transform="translate(-6.802 -2.5)" fill="#333"/>
+          </svg>              
+            </a></li>
+
+            <li style="padding: 0 0.5rem;">
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16.8" viewBox="0 0 24 16.8">
-                    <path id="youtube" d="M5.6,7.4H22.4a1.2,1.2,0,0,1,1.2,1.2v9.6a1.2,1.2,0,0,1-1.2,1.2H5.6a1.2,1.2,0,0,1-1.2-1.2V8.6A1.2,1.2,0,0,1,5.6,7.4ZM2,8.6A3.6,3.6,0,0,1,5.6,5H22.4A3.6,3.6,0,0,1,26,8.6v9.6a3.6,3.6,0,0,1-3.6,3.6H5.6A3.6,3.6,0,0,1,2,18.2Zm9.6,1.2,4.8,3.6L11.6,17Z" transform="translate(-2 -5)" fill="#333" fill-rule="evenodd"/>
-                    </svg>              
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <g id="instagram" transform="translate(-1 -1)">
+                  <path id="Path_1" data-name="Path 1" d="M11.5,7A4.5,4.5,0,1,0,16,11.5,4.5,4.5,0,0,0,11.5,7ZM8.8,11.5a2.7,2.7,0,1,0,2.7-2.7A2.7,2.7,0,0,0,8.8,11.5Z" transform="translate(-1.5 -1.5)" fill="#333" fill-rule="evenodd"/>
+                  <path id="Path_2" data-name="Path 2" d="M18,5a1,1,0,1,0,1,1A1,1,0,0,0,18,5Z" transform="translate(-3.2 -0.8)" fill="#333"/>
+                  <path id="Path_3" data-name="Path 3" d="M4.273,1A3.273,3.273,0,0,0,1,4.273V15.727A3.273,3.273,0,0,0,4.273,19H15.727A3.273,3.273,0,0,0,19,15.727V4.273A3.273,3.273,0,0,0,15.727,1ZM15.727,2.636H4.273A1.636,1.636,0,0,0,2.636,4.273V15.727a1.636,1.636,0,0,0,1.636,1.636H15.727a1.636,1.636,0,0,0,1.636-1.636V4.273A1.636,1.636,0,0,0,15.727,2.636Z" fill="#333" fill-rule="evenodd"/>
+                </g>
+              </svg>
+              
                 </a>
             </li>
-            </ul>
-                <p style="font-size: 1rem; font-weight: normal;">
-                    <a style=" color: #333; text-decoration: none;" class="newsletter-link" href="http://illkidrecords.local/unsubscribe/">unsubcribe</a> | 
-                    <a style=" color: #333; text-decoration: none;" class="newsletter-link" href="">View this email online</a>
-                </p>
-                <p style="font-size: 0.7rem; color: #9B9B9B;">© 2020 iLLkid Records | P.O. Box 151474, San Diego, CA 91913</p>
-            </div>
-    </div>';
+            <li style="padding: 0 0.5rem;">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16.8" viewBox="0 0 24 16.8">
+                <path id="youtube" d="M5.6,7.4H22.4a1.2,1.2,0,0,1,1.2,1.2v9.6a1.2,1.2,0,0,1-1.2,1.2H5.6a1.2,1.2,0,0,1-1.2-1.2V8.6A1.2,1.2,0,0,1,5.6,7.4ZM2,8.6A3.6,3.6,0,0,1,5.6,5H22.4A3.6,3.6,0,0,1,26,8.6v9.6a3.6,3.6,0,0,1-3.6,3.6H5.6A3.6,3.6,0,0,1,2,18.2Zm9.6,1.2,4.8,3.6L11.6,17Z" transform="translate(-2 -5)" fill="#333" fill-rule="evenodd"/>
+                </svg>              
+            </a>
+        </li>
+        </ul>
+            <p style="font-size: 1rem; font-weight: normal;">
+                <a style=" color: #333; text-decoration: none;" href="http://illkidrecords.local/unsubscribe/">unsubcribe</a> | 
+                <a style=" color: #333; text-decoration: none;" 
+                   ="newsletter-link" href="">View this email online</a>
+            </p>
+            <p style="font-size: 0.7rem; color: #9B9B9B;">© 2020 iLLkid Records | P.O. Box 151474, San Diego, CA 91913</p>
+        </div>
+</div>';
     
     $headers = "From: $email\r\n"; 
 
