@@ -177,19 +177,16 @@ function prefix_send_email_to_admin() {
     ">
     <div style="display: flex; padding: 1rem 0; width: 500px;flex-direction: column; justify-content: flex-start;">
        <div>
-          <a href="http://illkidrecords.local/" style="text-transform: uppercase;
-        color: #333;
-        text-decoration: none;
-        font-family: helveticaneueblackcond, sans-serif;
-        font-weight: bold;
-        line-height: 13px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="54" viewBox="0 0 96 54">
-          <g id="Logo_Main" transform="translate(-883.755 -31.447)">
-            <text id="ILLKID_RECORDS" data-name="ILLKID
-            RECORDS" transform="translate(883.755 31.447)" fill="#ccc" font-size="21" font-family="HelveticaNeueBlackCond, HelveticaNeue"><tspan x="0" y="20">ILLKID</tspan><tspan fill="#2e2e2e" font-size="22"><tspan x="0" y="38">RECORDS</tspan></tspan></text>
-          </g>
-      </svg>       
-        </a>
+          <a class="brand logo" href="https://illkidrecords.com/" style="text-transform: uppercase;
+            color: #333;
+            text-decoration: none;
+            font-family: helveticaneueblackcond, sans-serif;
+            font-weight: bold;
+            line-height: 13px;">
+            <span style="color: #ccc;
+                display: block;">illkid</span>
+            <span style="color: #535353;">records</span>
+          </a>
       </div>
     </div>
 
