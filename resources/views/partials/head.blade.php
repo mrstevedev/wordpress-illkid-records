@@ -18,6 +18,12 @@
 
   @if(is_front_page()) 
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+      />
     @endif
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://kit.fontawesome.com/42562b750b.js" crossorigin="anonymous"></script>
   </head>
