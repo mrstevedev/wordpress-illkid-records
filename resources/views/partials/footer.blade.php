@@ -97,11 +97,17 @@
               </ul>
             </span>
           </div>--}}
-          <div class="back-to-top"
-          ">
-          <a href="#top"><i class="fas fa-long-arrow-alt-up"></i> Back to Top</a>
-      </div>
+          <div class="back-to-top animate__animated animate__fadeInRight">
+              <a data-scroll href="#top" class="backtotopBtn">
+                  <i class="fa fa-angle-up" aria-hidden="true"></i>
+              </a>
+          </div>
         </div>
       </div>
     </div>
 </footer>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script> 
+
