@@ -47,12 +47,12 @@ export default {
     }
 
     // Get language toggle button 
-    const languageToggle = document.querySelector('.languageTogglerBtn');
-    languageToggle.addEventListener('click', handleLanguageToggle);
-    function handleLanguageToggle(event) {
-      event.preventDefault();
-      console.log('Choose language');
-    }
+    // const languageToggle = document.querySelector('.languageTogglerBtn');
+    // languageToggle.addEventListener('click', handleLanguageToggle);
+    // function handleLanguageToggle(event) {
+    //   event.preventDefault();
+    //   console.log('Choose language');
+    // }
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
