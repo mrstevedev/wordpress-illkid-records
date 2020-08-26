@@ -1,4 +1,4 @@
-<header name="top" class="banner" 
+<header id="top" name="top" class="banner" 
   data-aos="fade-down" 
   data-aos-delay="900"
   data-aos-duration="130">
