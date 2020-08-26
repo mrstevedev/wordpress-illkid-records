@@ -7381,12 +7381,12 @@ Router.prototype.loadEvents = function loadEvents () {
     }
 
     // Get language toggle button 
-    var languageToggle = document.querySelector('.languageTogglerBtn');
-    languageToggle.addEventListener('click', handleLanguageToggle);
-    function handleLanguageToggle(event) {
-      event.preventDefault();
-      console.log('Choose language');
-    }
+    // const languageToggle = document.querySelector('.languageTogglerBtn');
+    // languageToggle.addEventListener('click', handleLanguageToggle);
+    // function handleLanguageToggle(event) {
+    //   event.preventDefault();
+    //   console.log('Choose language');
+    // }
   },
   finalize: function finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -7404,13 +7404,24 @@ Router.prototype.loadEvents = function loadEvents () {
     // JavaScript to be fired on the home page
     $('[data-toggle="tooltip"]').tooltip()
 
-    $(window).on('scroll', function () {
-      if ($(this).scrollTop() > 100) {
-          $('header').addClass('not-transparent');
-      }
-      else {
-          $('header').removeClass('not-transparent');
-      }
+  //   $(window).on('scroll', function () {
+  //     if ($(this).scrollTop() > 100) {
+  //         $('header').addClass('not-transparent');
+  //     }
+  //     else {
+  //         $('header').removeClass('not-transparent');
+  //     }
+  // });
+
+   //sticky back to top
+   $(window).on('scroll', function(){
+    var scrollPos = $(window).scrollTop();
+    if(scrollPos >= 800){
+      $('.back-to-top').addClass('fixed animated fadeInRight show');
+        
+    } else if(scrollPos < 800){
+      $('.back-to-top').removeClass('fadeInRight show');
+    }
   });
 
 

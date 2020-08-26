@@ -16367,23 +16367,47 @@ ul {
 
 /* line 63, resources/assets/styles/common/_global.scss */
 
-.back-to-top {
-  position: absolute;
-  bottom: 1.94rem;
-  right: 2rem;
+.show {
+  display: block !important;
 }
 
-/* line 68, resources/assets/styles/common/_global.scss */
+/* line 67, resources/assets/styles/common/_global.scss */
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background: #283440;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: none;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+/* line 79, resources/assets/styles/common/_global.scss */
 
 .back-to-top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
   color: #fff;
-  font-family: bio-sans, sans-serif;
-  font-weight: 800;
-  font-size: 0.6rem;
-  text-transform: uppercase;
 }
 
-/* line 77, resources/assets/styles/common/_global.scss */
+/* line 91, resources/assets/styles/common/_global.scss */
 
 .sub-menu {
   position: absolute;
@@ -16399,7 +16423,7 @@ ul {
   z-index: 1;
 }
 
-/* line 90, resources/assets/styles/common/_global.scss */
+/* line 104, resources/assets/styles/common/_global.scss */
 
 .sub-menu::before {
   position: absolute;
@@ -16421,7 +16445,7 @@ ul {
   margin: 0 auto;
 }
 
-/* line 109, resources/assets/styles/common/_global.scss */
+/* line 123, resources/assets/styles/common/_global.scss */
 
 .sub-menu li a {
   color: #fff !important;
@@ -16432,13 +16456,13 @@ ul {
   font-size: 0.7rem;
 }
 
-/* line 115, resources/assets/styles/common/_global.scss */
+/* line 129, resources/assets/styles/common/_global.scss */
 
 .sub-menu li a::after {
   background: transparent !important;
 }
 
-/* line 122, resources/assets/styles/common/_global.scss */
+/* line 136, resources/assets/styles/common/_global.scss */
 
 .nav {
   padding-left: 10rem;
@@ -16450,13 +16474,13 @@ ul {
   position: relative;
 }
 
-/* line 131, resources/assets/styles/common/_global.scss */
+/* line 145, resources/assets/styles/common/_global.scss */
 
 .nav > li {
   padding: 0 1rem;
 }
 
-/* line 134, resources/assets/styles/common/_global.scss */
+/* line 148, resources/assets/styles/common/_global.scss */
 
 .nav > li > a {
   color: #333;
@@ -16465,7 +16489,7 @@ ul {
   padding: 1rem !important;
 }
 
-/* line 143, resources/assets/styles/common/_global.scss */
+/* line 157, resources/assets/styles/common/_global.scss */
 
 .social-list {
   list-style: none;
@@ -16474,7 +16498,7 @@ ul {
   display: flex;
 }
 
-/* line 147, resources/assets/styles/common/_global.scss */
+/* line 161, resources/assets/styles/common/_global.scss */
 
 .social-list li {
   padding: 0 1rem;
@@ -16486,7 +16510,7 @@ ul {
           align-items: center;
 }
 
-/* line 153, resources/assets/styles/common/_global.scss */
+/* line 167, resources/assets/styles/common/_global.scss */
 
 .social-list li a svg {
   -webkit-transition: 0.12s ease-in-out;
@@ -16494,32 +16518,32 @@ ul {
   transition: 0.12s ease-in-out;
 }
 
-/* line 157, resources/assets/styles/common/_global.scss */
+/* line 171, resources/assets/styles/common/_global.scss */
 
 .social-list li a:hover {
   fill: #be817b;
 }
 
-/* line 164, resources/assets/styles/common/_global.scss */
+/* line 178, resources/assets/styles/common/_global.scss */
 
 .menu-item-has-children {
   position: relative;
 }
 
-/* line 168, resources/assets/styles/common/_global.scss */
+/* line 182, resources/assets/styles/common/_global.scss */
 
 .menu-item-has-children:hover .sub-menu {
   display: block;
 }
 
-/* line 173, resources/assets/styles/common/_global.scss */
+/* line 187, resources/assets/styles/common/_global.scss */
 
 .menu-item-has-children:hover .sub-menu li a:hover {
   background: #000;
   text-indent: 5px;
 }
 
-/* line 183, resources/assets/styles/common/_global.scss */
+/* line 197, resources/assets/styles/common/_global.scss */
 
 .home .banner {
   position: fixed;
@@ -16527,7 +16551,7 @@ ul {
   z-index: 10;
 }
 
-/* line 189, resources/assets/styles/common/_global.scss */
+/* line 203, resources/assets/styles/common/_global.scss */
 
 .nav__container {
   display: -webkit-box;
@@ -16539,7 +16563,7 @@ ul {
   width: 100%;
 }
 
-/* line 195, resources/assets/styles/common/_global.scss */
+/* line 209, resources/assets/styles/common/_global.scss */
 
 .section-one {
   background: url("http://illkidrecords.local/wp-content/uploads/2020/02/bonitatrolly.jpg") 0 -31px no-repeat;
@@ -16549,7 +16573,7 @@ ul {
   margin: 0 auto;
 }
 
-/* line 203, resources/assets/styles/common/_global.scss */
+/* line 217, resources/assets/styles/common/_global.scss */
 
 .section-end-more {
   position: absolute;
@@ -16577,7 +16601,7 @@ ul {
           align-items: center;
 }
 
-/* line 223, resources/assets/styles/common/_global.scss */
+/* line 237, resources/assets/styles/common/_global.scss */
 
 .logo {
   text-transform: uppercase;
@@ -16587,27 +16611,27 @@ ul {
   line-height: 13px;
 }
 
-/* line 231, resources/assets/styles/common/_global.scss */
+/* line 245, resources/assets/styles/common/_global.scss */
 
 .logo:hover {
   color: #333;
   text-decoration: none;
 }
 
-/* line 236, resources/assets/styles/common/_global.scss */
+/* line 250, resources/assets/styles/common/_global.scss */
 
 .logo-top {
   color: #ccc;
   display: block;
 }
 
-/* line 241, resources/assets/styles/common/_global.scss */
+/* line 255, resources/assets/styles/common/_global.scss */
 
 .logo-bottom {
   color: #535353;
 }
 
-/* line 245, resources/assets/styles/common/_global.scss */
+/* line 259, resources/assets/styles/common/_global.scss */
 
 .cart-total {
   position: absolute;
@@ -16631,7 +16655,7 @@ ul {
           justify-content: center;
 }
 
-/* line 262, resources/assets/styles/common/_global.scss */
+/* line 276, resources/assets/styles/common/_global.scss */
 
 .fas.fa-chevron-down {
   font-size: 11px;
@@ -16640,35 +16664,35 @@ ul {
 }
 
 @media (max-width: 535px) {
-  /* line 269, resources/assets/styles/common/_global.scss */
+  /* line 283, resources/assets/styles/common/_global.scss */
 
   .slide-call-to-action {
     width: 100%;
     height: initial;
   }
 
-  /* line 274, resources/assets/styles/common/_global.scss */
+  /* line 288, resources/assets/styles/common/_global.scss */
 
   .slide-call-to-action-left {
     width: initial;
     padding: 0 1rem 0 1rem;
   }
 
-  /* line 279, resources/assets/styles/common/_global.scss */
+  /* line 293, resources/assets/styles/common/_global.scss */
 
   .slide-call-to-action-right {
     width: initial;
     padding: 0 1rem 0 1rem;
   }
 
-  /* line 284, resources/assets/styles/common/_global.scss */
+  /* line 298, resources/assets/styles/common/_global.scss */
 
   .cta-separator {
     height: initial;
   }
 }
 
-/* line 290, resources/assets/styles/common/_global.scss */
+/* line 304, resources/assets/styles/common/_global.scss */
 
 .cookies-notification {
   position: fixed;
@@ -16682,7 +16706,7 @@ ul {
   display: none;
 }
 
-/* line 301, resources/assets/styles/common/_global.scss */
+/* line 315, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies-notification-close {
   display: -webkit-box;
@@ -16693,7 +16717,7 @@ ul {
           align-items: center;
 }
 
-/* line 306, resources/assets/styles/common/_global.scss */
+/* line 320, resources/assets/styles/common/_global.scss */
 
 .cookies-notification p {
   font-size: 1.2rem;
@@ -16701,7 +16725,7 @@ ul {
   padding: 0 0.8rem 0 0;
 }
 
-/* line 312, resources/assets/styles/common/_global.scss */
+/* line 326, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .btn,
 .cookies-notification .comment-form input[type="submit"],
@@ -16729,7 +16753,7 @@ ul {
   position: relative;
 }
 
-/* line 326, resources/assets/styles/common/_global.scss */
+/* line 340, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__accept--btn svg {
   position: absolute;
@@ -16737,7 +16761,7 @@ ul {
   top: 13px;
 }
 
-/* line 332, resources/assets/styles/common/_global.scss */
+/* line 346, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__decline--btn svg {
   position: absolute;
@@ -16745,51 +16769,51 @@ ul {
   top: 13px;
 }
 
-/* line 338, resources/assets/styles/common/_global.scss */
+/* line 352, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__accept--btn {
   background: #be817b;
 }
 
-/* line 342, resources/assets/styles/common/_global.scss */
+/* line 356, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__accept--btn:hover {
   background: #d29691;
 }
 
-/* line 346, resources/assets/styles/common/_global.scss */
+/* line 360, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__decline--btn {
   background: #e2e2e2;
 }
 
-/* line 350, resources/assets/styles/common/_global.scss */
+/* line 364, resources/assets/styles/common/_global.scss */
 
 .cookies-notification .cookies__decline--btn:hover {
   background: #f5f5f5;
 }
 
-/* line 355, resources/assets/styles/common/_global.scss */
+/* line 369, resources/assets/styles/common/_global.scss */
 
 .cookies-notification.show {
   display: block !important;
 }
 
 @media (max-width: 545px) {
-  /* line 360, resources/assets/styles/common/_global.scss */
+  /* line 374, resources/assets/styles/common/_global.scss */
 
   .cookies-notification .cookies-notification-close {
     display: initial;
   }
 
-  /* line 363, resources/assets/styles/common/_global.scss */
+  /* line 377, resources/assets/styles/common/_global.scss */
 
   .cookies-notification .cookies-notification-close p {
     padding: 0 0.8rem 1.5rem 0;
     font-size: 0.9rem;
   }
 
-  /* line 369, resources/assets/styles/common/_global.scss */
+  /* line 383, resources/assets/styles/common/_global.scss */
 
   .cookies-notification {
     position: fixed;
@@ -16798,7 +16822,7 @@ ul {
     padding: 2rem 2rem;
   }
 
-  /* line 375, resources/assets/styles/common/_global.scss */
+  /* line 389, resources/assets/styles/common/_global.scss */
 
   .cookies-notification .cookies__accept--btn {
     width: 100%;
@@ -16806,14 +16830,14 @@ ul {
     margin-bottom: 12px;
   }
 
-  /* line 381, resources/assets/styles/common/_global.scss */
+  /* line 395, resources/assets/styles/common/_global.scss */
 
   .cookies-notification .cookies__decline--btn {
     width: 100%;
     margin: 0;
   }
 
-  /* line 387, resources/assets/styles/common/_global.scss */
+  /* line 401, resources/assets/styles/common/_global.scss */
 
   .btn,
   .comment-form input[type="submit"],
@@ -16822,38 +16846,38 @@ ul {
     margin-bottom: 12px;
   }
 
-  /* line 392, resources/assets/styles/common/_global.scss */
+  /* line 406, resources/assets/styles/common/_global.scss */
 
   .woocommerce.columns-3 {
     padding: 0 1rem !important;
   }
 
-  /* line 396, resources/assets/styles/common/_global.scss */
+  /* line 410, resources/assets/styles/common/_global.scss */
 
   .slideshow-arrows {
     padding: 0 2rem;
   }
 
-  /* line 400, resources/assets/styles/common/_global.scss */
+  /* line 414, resources/assets/styles/common/_global.scss */
 
   .slide__CTA--left {
     padding: 0 1rem 0 0;
   }
 
-  /* line 404, resources/assets/styles/common/_global.scss */
+  /* line 418, resources/assets/styles/common/_global.scss */
 
   .slide__CTA--right {
     padding: 0 1rem 0 1rem;
   }
 
-  /* line 408, resources/assets/styles/common/_global.scss */
+  /* line 422, resources/assets/styles/common/_global.scss */
 
   .slide__CTA h1 {
     font-size: 1.6rem !important;
     line-height: 23px;
   }
 
-  /* line 413, resources/assets/styles/common/_global.scss */
+  /* line 427, resources/assets/styles/common/_global.scss */
 
   .slide__CTA h4,
   .slide__CTA a {
@@ -16861,7 +16885,7 @@ ul {
   }
 }
 
-/* line 419, resources/assets/styles/common/_global.scss */
+/* line 433, resources/assets/styles/common/_global.scss */
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -16869,7 +16893,7 @@ ul {
   background: #000;
 }
 
-/* line 424, resources/assets/styles/common/_global.scss */
+/* line 438, resources/assets/styles/common/_global.scss */
 
 ::-moz-selection {
   color: #fff;
@@ -16881,47 +16905,47 @@ ul {
   background: #000;
 }
 
-/* line 429, resources/assets/styles/common/_global.scss */
+/* line 443, resources/assets/styles/common/_global.scss */
 
 .navbar-toggler {
   outline: none !important;
 }
 
 @media (max-width: 545px) {
-  /* line 434, resources/assets/styles/common/_global.scss */
+  /* line 448, resources/assets/styles/common/_global.scss */
 
   .nav {
     display: initial;
     padding-left: 0;
   }
 
-  /* line 439, resources/assets/styles/common/_global.scss */
+  /* line 453, resources/assets/styles/common/_global.scss */
 
   .nav__container {
     display: initial;
   }
 
-  /* line 443, resources/assets/styles/common/_global.scss */
+  /* line 457, resources/assets/styles/common/_global.scss */
 
   .navbar-collapse {
     padding: 7rem;
     height: 100vh;
   }
 
-  /* line 448, resources/assets/styles/common/_global.scss */
+  /* line 462, resources/assets/styles/common/_global.scss */
 
   .nav > li > a {
     font-size: 2rem;
     padding: 1rem 0 !important;
   }
 
-  /* line 453, resources/assets/styles/common/_global.scss */
+  /* line 467, resources/assets/styles/common/_global.scss */
 
   .nav__LoggedIn--user {
     right: -1rem !important;
   }
 
-  /* line 459, resources/assets/styles/common/_global.scss */
+  /* line 473, resources/assets/styles/common/_global.scss */
 
   .menu-item-has-children:hover .sub-menu {
     display: none;
