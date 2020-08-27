@@ -17939,7 +17939,13 @@ nav.woocommerce-pagination {
   border: none;
 }
 
-/* line 261, resources/assets/styles/layouts/_pages.scss */
+/* line 259, resources/assets/styles/layouts/_pages.scss */
+
+.woocommerce .woocommerce-customer-details address {
+  border: none;
+}
+
+/* line 265, resources/assets/styles/layouts/_pages.scss */
 
 .modal-header {
   border-bottom: none;
@@ -17947,14 +17953,14 @@ nav.woocommerce-pagination {
   border-top-right-radius: none;
 }
 
-/* line 267, resources/assets/styles/layouts/_pages.scss */
+/* line 271, resources/assets/styles/layouts/_pages.scss */
 
 .modal-content {
   border: none;
   background-color: transparent;
 }
 
-/* line 272, resources/assets/styles/layouts/_pages.scss */
+/* line 276, resources/assets/styles/layouts/_pages.scss */
 
 .close {
   color: #fff;
@@ -17963,7 +17969,7 @@ nav.woocommerce-pagination {
 }
 
 @media (min-width: 576px) {
-  /* line 279, resources/assets/styles/layouts/_pages.scss */
+  /* line 283, resources/assets/styles/layouts/_pages.scss */
 
   .modal-dialog {
     margin: 5.75rem auto;
@@ -17971,7 +17977,7 @@ nav.woocommerce-pagination {
 }
 
 @media (max-width: 575px) {
-  /* line 286, resources/assets/styles/layouts/_pages.scss */
+  /* line 290, resources/assets/styles/layouts/_pages.scss */
 
   .woocommerce-cart .woocommerce {
     margin: 2rem 1rem;
