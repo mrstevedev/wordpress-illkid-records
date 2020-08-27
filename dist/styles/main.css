@@ -17920,20 +17920,39 @@ nav.woocommerce-pagination {
 
 /* line 244, resources/assets/styles/layouts/_pages.scss */
 
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  font-weight: bold;
+  padding: 0 0 2rem 0;
+}
+
+/* line 249, resources/assets/styles/layouts/_pages.scss */
+
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  padding: 1rem 0 3rem;
+}
+
+/* line 253, resources/assets/styles/layouts/_pages.scss */
+
+.woocommerce table.shop_table {
+  border: none;
+}
+
+/* line 259, resources/assets/styles/layouts/_pages.scss */
+
 .modal-header {
   border-bottom: none;
   border-top-left-radius: none;
   border-top-right-radius: none;
 }
 
-/* line 250, resources/assets/styles/layouts/_pages.scss */
+/* line 265, resources/assets/styles/layouts/_pages.scss */
 
 .modal-content {
   border: none;
   background-color: transparent;
 }
 
-/* line 255, resources/assets/styles/layouts/_pages.scss */
+/* line 270, resources/assets/styles/layouts/_pages.scss */
 
 .close {
   color: #fff;
@@ -17942,7 +17961,7 @@ nav.woocommerce-pagination {
 }
 
 @media (min-width: 576px) {
-  /* line 262, resources/assets/styles/layouts/_pages.scss */
+  /* line 277, resources/assets/styles/layouts/_pages.scss */
 
   .modal-dialog {
     margin: 5.75rem auto;
@@ -17950,7 +17969,7 @@ nav.woocommerce-pagination {
 }
 
 @media (max-width: 575px) {
-  /* line 269, resources/assets/styles/layouts/_pages.scss */
+  /* line 284, resources/assets/styles/layouts/_pages.scss */
 
   .woocommerce-cart .woocommerce {
     margin: 2rem 1rem;

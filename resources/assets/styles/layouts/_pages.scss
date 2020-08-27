@@ -239,6 +239,21 @@ nav.woocommerce-pagination {
   }
 }
 
+// Payment Received Styles
+
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  font-weight: bold;
+  padding: 0 0 2rem 0;
+}
+
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  padding: 1rem 0 3rem;
+}
+
+.woocommerce table.shop_table {
+  border: none;
+}
+
 // Remove Modal Styles //
 
 .modal-header {
