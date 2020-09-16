@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/nlf5xci.css">
 
   @if(is_front_page()) 
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
