@@ -136,7 +136,7 @@
     .footer-content--btmLeft,
     .footer-content--center,
     .footer-content--btmRight {
-      margin: 0 0 4rem 0;
+      margin: 0 0 2rem 0;
     }
   }
 
@@ -149,6 +149,7 @@
   .footer__signUp--btn {
     width: 100%;
     padding: 0;
+    position: initial;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }

@@ -17573,7 +17573,7 @@ ul {
   .content-info .footer-content--btmLeft,
   .content-info .footer-content--center,
   .content-info .footer-content--btmRight {
-    margin: 0 0 4rem 0;
+    margin: 0 0 2rem 0;
   }
 
   /* line 143, resources/assets/styles/layouts/_footer.scss */
@@ -17589,18 +17589,19 @@ ul {
   .footer__signUp--btn {
     width: 100%;
     padding: 0;
+    position: initial;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  /* line 156, resources/assets/styles/layouts/_footer.scss */
+  /* line 157, resources/assets/styles/layouts/_footer.scss */
 
   .footer__content--top {
     height: initial !important;
     padding: 5rem 2rem;
   }
 
-  /* line 161, resources/assets/styles/layouts/_footer.scss */
+  /* line 162, resources/assets/styles/layouts/_footer.scss */
 
   .footer__content--btm {
     height: initial !important;
