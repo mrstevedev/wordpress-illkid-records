@@ -8,6 +8,8 @@
   text-transform: uppercase;
   font-size: 1.2rem !important;
   line-height: 18px;
+  font-family: "DopeJam", sans-serif;
+  color: #000;
 }
 
 .artist-name {
@@ -23,9 +25,10 @@
 }
 
 .price {
-  font-size: 1.2rem !important;
-  font-weight: bold !important;
-  color: #be817b !important;
+  font-size: 1rem !important;
+  font-weight: initial !important;
+  color: #3c3c3c !important;
+  font-family: bio-sans, sans-serif;
 }
 
 .woocommerce ul.products li.product .onsale {
