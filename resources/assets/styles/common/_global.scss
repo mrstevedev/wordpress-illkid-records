@@ -109,23 +109,23 @@ ul {
   top: 3.4rem;
   z-index: 1;
 
-  &::before {
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-right: 10px solid #000;
-    border-top: 10px solid transparent;
-    border-left: 0 dotted;
-    border-bottom: 10px solid transparent;
-    vertical-align: middle;
-    content: "";
-    top: -11px;
-    transform: rotate(90deg);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
+  // &::before {
+  //   position: absolute;
+  //   display: inline-block;
+  //   width: 0;
+  //   height: 0;
+  //   border-right: 10px solid #000;
+  //   border-top: 10px solid transparent;
+  //   border-left: 0 dotted;
+  //   border-bottom: 10px solid transparent;
+  //   vertical-align: middle;
+  //   content: "";
+  //   top: -11px;
+  //   transform: rotate(90deg);
+  //   left: 0;
+  //   right: 0;
+  //   margin: 0 auto;
+  // }
 
   li {
     a {
