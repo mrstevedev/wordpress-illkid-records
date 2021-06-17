@@ -1,11 +1,11 @@
 <div class="cookies-notification">
   <div class="cookies-notification-close">
-    <p>THIS SITE USES COOKIES TO PROVIDE A GREAT USER EXPERIENCE. BY USING ILLKID RECORDS, YOU AGREE TO OUR USE OF COOKIES.</p>
+    <p>This site uses cookies to provide a great user experience. By using iLLkid Records, you agree to our use of cookies.</p>
     <button class="cookies__accept--btn btn">
       Accept
     </button>
     <a href="/cookie-policy">
-      <button class="cookies__decline--btn btn">More 
+      <button class="cookies__decline--btn btn">Privacy Policy 
   </button>
 </a>
   </div>
