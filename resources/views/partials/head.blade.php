@@ -13,6 +13,8 @@
     <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueMedium.woff" type="font/woff" crossorigin />
     <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/HelveticaNeueMedium.woff2" type="font/woff" crossorigin />
   @endif
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/DopeJam.woff" type="font/woff" crossorigin />
+  <link rel="preload" as="font" href="@php bloginfo('url') @endphp/wp-content/themes/illkidrecords/dist/fonts/DopeJam.woff2" type="font/woff" crossorigin />
 
   <link rel="stylesheet" href="https://use.typekit.net/nlf5xci.css">
 
