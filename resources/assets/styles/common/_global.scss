@@ -327,22 +327,25 @@ ul {
   .cookies-notification-close {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     padding: 0 0.8rem 0 0;
+    font-weight: 100;
+    letter-spacing: 0.03rem;
   }
 
   .btn {
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
+    border-radius: 3px;
+    // font-weight: bold;
+    // text-transform: uppercase;
     margin: 0 0.3rem;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.3rem;
     transition: 0.12s ease-in-out;
-    width: 120px;
+    width: 108px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,6 +374,7 @@ ul {
 
   .cookies__decline--btn {
     background: #e2e2e2;
+    width: 160px;
   }
 
   .cookies__decline--btn:hover {
