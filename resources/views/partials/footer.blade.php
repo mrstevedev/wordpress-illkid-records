@@ -12,7 +12,7 @@
 </div>
 <footer class="content-info">
     {{-- @php dynamic_sidebar('sidebar-footer') @endphp --}}
-    <div class="footer__content--top">
+    <!-- <div class="footer__content--top">
       <div class="container-fluid">
         <div class="footer-content--btmLeft">
           <label for="signup">
@@ -51,6 +51,7 @@
         </div>
       </div>
     </div>
+  -->
     <div class="footer__content--btm">
       <div class="container">
         <div class="footer-content--btmLeft">
@@ -60,7 +61,7 @@
           </a>
         </div>
         <div class="footer__content--center">
-          <p class="footer__content--copyright">&copy; ILLKID RECORDS 2020</p>
+          <p class="footer__content--copyright"><span class="footer__content--copyight-mark">&copy;</span> ILLKID RECORDS</p>
         </div>
         <div class="footer__content--btmRight">
           {{-- <div class="footer__content--btmLanguage">
