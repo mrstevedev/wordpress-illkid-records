@@ -11,3 +11,9 @@
 .modal-header .close {
   outline: none;
 }
+
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover,
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:focus {
+  background: #fff;
+  color: #000;
+}
