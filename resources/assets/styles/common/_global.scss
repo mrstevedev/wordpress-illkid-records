@@ -196,6 +196,7 @@ ul {
           &:hover {
             background: #000;
             text-indent: 5px;
+            color: #a2281d !important;
           }
         }
       }
@@ -350,6 +351,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
+    font-size: 0.9rem;
   }
 
   .cookies__accept--btn svg {
