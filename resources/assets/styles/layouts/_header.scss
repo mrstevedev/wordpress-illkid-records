@@ -29,6 +29,14 @@
   @extend .nav-link;
 }
 
+.banner .nav li:not(:last-child) a {
+  transition: 0.12s ease-in-out;
+
+  &:hover {
+    color: #a2281d;
+  }
+}
+
 .banner {
   transition: 0.22s ease-in-out !important;
   background: rgb(0, 0, 0);
